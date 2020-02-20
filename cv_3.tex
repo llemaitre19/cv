@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% !TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% ----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+% \rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+% ----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+  % ----------------------------------------------------------------------------------------
+  %	NAME AND CURRICULUM VITAE TEXT
+  % ----------------------------------------------------------------------------------------
+
+  \parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+    \vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+    \centering % Centre text
+    {\sffamily\Huge Loïc Lemaître}\\\medskip % Your name
+    {\Huge\color{headings}\cvtextfont Développeur Web}
+  }
+
+  % ----------------------------------------------------------------------------------------
+  %	WORK EXPERIENCE
+  % ----------------------------------------------------------------------------------------
+
+  \section{Expériences professionnelle}
+
+  % Blank \workposition command to add another job:
+
+  % \workposition{} % Duration
+  % {} % FT/PT (full time or part time)
+  % {} % Employer
+  % {} % Job title
+  % {} % Description
+
+  % All 5 parameters must be supplied but any can be empty if you don't need them
+
+  % ------------------------------------------------
+
+  \workposition{Current, from Jan 1995} % Duration
+  {FT} % FT/PT (full time or part time)
+  {Black Mesa Research Facility} % Employer
+  {Team Leader (Anomalous Materials)} % Job title
+  {As part of this promotion, I began conducting nuclear and subatomic research in the Anomalous Materials department. My team and I are particularly interested in dimensionality and its interaction with spacetime. The focus is on practical outcomes and applications in teleportation and communication with distal locations.} % Description
+
+  % ------------------------------------------------
+
+  \workposition{Feb 1991 -- Jan 1995} % Duration
+  {FT} % FT/PT (full time or part time)
+  {Black Mesa Research Facility} % Employer
+  {Level 3 Research Associate} % Job title
+  {This position involved transitioning from purely theoretical work to experimental applications utilising the immense resources of Black Mesa. The transition required an initial learning curve in hazard containment, health and safety procedures and operating experimental infrastructure. Manipulating valves, carts, buttons, levers, etc considerably increased my physical fitness.}  % Description
+
+  % ------------------------------------------------
+
+  \workposition{Jul 1982 -- Dec 1984} % Duration
+  {PT} % FT/PT (full time or part time)
+  {WashPests Limited} % Employer
+  {Pest Control Technician} % Job title
+  {In this summer job I was tasked with helping eradicate pests from industrial areas. Work involved setting traps, spraying and physical eradication. I received praise for reaching difficult areas and my innovative use of a crowbar to assist in my work.} % Description
+
+  % ------------------------------------------------
+
+  \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+  \switchcolumn % Switch to the next paracol column
+
+  % ----------------------------------------------------------------------------------------
+  %	COLOURED CONTACT DETAILS BOX
+  % ----------------------------------------------------------------------------------------
+
+  \parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+    \vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+    \colorbox{shade}{ % Create the coloured box
+      \begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+        \raisebox{-1pt}{\faHome} & Charlat Haut - 19 500 Collonges-la-Rouge \\ % Address
+        \raisebox{-1pt}{\faPhone} & 06 62 57 34 88 \\ % Phone number
+        \raisebox{0pt}{\small\faEnvelope} & \href{mailto:loic.lemaitre@gmail.com}{loic.lemaitre@gmail.com} \\ % Email address
+        \raisebox{-1pt}{\small\faGitlab} & \href{https://gitlab.com/Moki19}{https://gitlab.com/Moki19} \\ % Gitlab
+        \raisebox{-1pt}{\small\faGithub} & \href{https://github.com/Moki-19}{https://github.com/Moki-19} \\ % Github
+        % \raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
+        % \raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+        % See fontawesome.pdf in the fonts folder for all icons you can use
+      \end{supertabular}
+    }
+  }
+
+  % ----------------------------------------------------------------------------------------
+  %	EDUCATION
+  % ----------------------------------------------------------------------------------------
+
+  \section{Formation}
+
+  % Blank \educationentry{} command to add another degree:
+
+  % \educationentry{} % Duration
+  % {} % Degree
+  % {} % Honours, achievements or distinctions (e.g. first class honours)
+  % {} % Department
+  % {} % Institution
+
+  % All 5 parameters must be supplied but any can be empty if you don't need them
+
+  % ------------------------------------------------
+
+  \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+    % ------------------------------------------------
+
+    \educationentry{1986 -- 1990} % Duration
+    {Doctor of Philosophy} % Degree
+    {} % Honours, achievements or distinctions (e.g. first class honours)
+    {Theoretical Physics} % Department
+    {Massachusetts Institute of Technology} % Institution
+
+    % ------------------------------------------------
+
+    \educationentry{1985} % Duration
+    {Master of Science} % Degree
+    {First Class Honours} % Honours, achievements or distinctions (e.g. first class honours)
+    {Theoretical Physics} % Department
+    {Massachusetts Institute of Technology} % Institution
+
+    % ------------------------------------------------
+
+    \educationentry{1982 -- 1984} % Duration
+    {Bachelor of Physics} % Degree
+    {} % Honours, achievements or distinctions (e.g. first class honours)
+    {Department of Physics} % Department
+    {The University of Washington} % Institution
+
+    % ------------------------------------------------
+
+  \end{supertabular}
+
+  % ----------------------------------------------------------------------------------------
+  %	COMPUTER SKILLS
+  % ----------------------------------------------------------------------------------------
+
+  \section{Compétences}
+
+  % Example \tableentry{} command to add another line:
+
+  % \tableentry{Heading}{Content}{spaceafter}
+
+  % All 3 parameters must be supplied but any can be empty if you don't need them
+  % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+  % ------------------------------------------------
+
+  \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+    % ------------------------------------------------
+
+    \tableentry{Beginner}{Java, MS DOS}{spaceafter}
+
+    % ------------------------------------------------
+
+    \tableentry{Intermediate}{Javascript, Python, HTML, CSS,}{}
+    \tableentry{}{Microsoft Windows}{}
+    \tableentry{}{Computer Hardware \& Support}{spaceafter}
+
+    % ------------------------------------------------
+
+    \tableentry{Expert}{Perl, Unix, \LaTeX}{spaceafter}
+
+    % ------------------------------------------------
+
+  \end{supertabular}
+
+  % ----------------------------------------------------------------------------------------
+  %	COMMUNICATION SKILLS
+  % ----------------------------------------------------------------------------------------
+
+  \section{Activités personnelles}
+
+  % Example \tableentry{} command to add another line:
+
+  % \tableentry{Heading}{Content}{spaceafter}
+
+  % All 3 parameters must be supplied but any can be empty if you don't need them
+  % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+  % ------------------------------------------------
+
+  \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+    % ------------------------------------------------
+
+    \tableentry{Conferences}{Oral Presentation at the Annual MIT}{}
+    \tableentry{}{Theoretical Physics Conference -- 1987}{spaceafter}
+
+    % ------------------------------------------------
+
+    \tableentry{Posters}{Poster at the Meeting of the American}{}
+    \tableentry{}{Physical Society -- 1985}{spaceafter}
+
+    % ------------------------------------------------
+
+  \end{supertabular}
+
+  \medskip % Extra whitespace before the next section
+
+  % ----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+% ----------------------------------------------------------------------------------------
+
+\end{document}
+
+%%% Local Variables:
+%%% coding: utf-8
+%%% mode: latex
+%%% TeX-engine: xetex
+%%% End:
